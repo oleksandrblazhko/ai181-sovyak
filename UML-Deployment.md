@@ -1,1 +1,1 @@
-![](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai181-sovyak/blob/laboratory-work-2/UML-Deployment.puml)
+![image](https://user-images.githubusercontent.com/46246359/210303867-49274ea5-4580-4190-98dc-d30a73d8408e.png)
