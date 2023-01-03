@@ -1,0 +1,39 @@
+@startuml
+
+title UML-діаграма розгортання ПП
+
+left to right direction
+
+skinparam componentStyle uml1
+
+node "<<Computer>>" as computer {
+    node "<<Windows/Mac/Linux>>" {
+        component [*Web-Browser (Chrome/Mozilla/Opera)]
+    }
+}
+
+interface PC
+
+PC -- computer
+
+node "<<Server 1>>" as server1 {
+  node "<<Operating System Linux>>" as l1 {
+      node "<<Python Django Server>>" {
+        component [*.py]
+    }
+  }
+}
+
+computer -- server1
+
+node "<<Server 2>>" as server2 {
+  node "<<Operating System Linux>>" as l2 {
+      node "<<PostgreSQL>>" {
+        database "Relation Database"
+    }
+  }
+}
+
+server1 -- server2
+
+@enduml
